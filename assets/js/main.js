@@ -127,6 +127,7 @@ const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 
 const addHidden = function () {
+  document.body.style.overflow="hidden";
   modal.classList.remove('hidden');
   modal.style.display = "flex";
   overlay.classList.remove('hidden');
@@ -139,6 +140,7 @@ for (let i = 0; i < showModal.length; i++) {
 }
 
 const removeHidden = function () {
+  document.body.style.overflow="scroll";
   modal.style.display = "none";
   modal.classList.add('hidden');
   overlay.classList.add('hidden');
@@ -199,11 +201,13 @@ document.getElementById('box3').addEventListener('mouseout', function () {
 document.getElementById('box4').addEventListener('mouseover', function () {
   document.querySelector('#box4 h3').style.background = "#185ADB";
   document.querySelector('#box4 h3').style.color = "#fff";
+  document.querySelector('.advanced').style.background="#FFC947";
 
 });
 document.getElementById('box4').addEventListener('mouseout', function () {
   document.querySelector('#box4 h3').style.background = "#f8f8f8";
   document.querySelector('#box4 h3').style.color = "#777777";
+  document.querySelector('.advanced').style.background="#185ADB";
 });
 
 })()
