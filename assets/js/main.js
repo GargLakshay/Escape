@@ -128,6 +128,7 @@ const overlay = document.querySelector('.overlay');
 
 const addHidden = function () {
   document.body.style.overflow="hidden";
+//  console.log(document.body.backgroundAttachment);
   modal.classList.remove('hidden');
   modal.style.display = "flex";
   overlay.classList.remove('hidden');
