@@ -799,7 +799,9 @@ background : #FFC947;
 
 .trainers .member img {
   margin: -1px -1px 30px -1px;
-  border-radius: 100%
+  border-radius: 100%;
+  width: 80%;
+  margin-top: 2%;
 }
 
 .trainers .member .member-content {
@@ -1240,6 +1242,10 @@ background : #FFC947;
   color: #fff;
 }
 
+/* .roadmap .advanced:hover
+{
+  background: #FFC947;
+} */
 
 /* -------------------------- */
 /* CLASSES TO MAKE MODAL WORK */
